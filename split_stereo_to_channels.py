@@ -37,6 +37,6 @@ def split_stereo_channels_native(audio_to_split: AudioSegment):
 
 
 audio = AudioSegment.from_file("audio.mp3")
-left, right = split_stereo_channels_native(audio)
+left, right = split_stereo_channels(audio)
 left.export("left.mp3")
 right.export("right.mp3")
